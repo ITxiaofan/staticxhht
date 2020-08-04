@@ -29,7 +29,7 @@ $(".mover .col-md-2").mouseout(e => {
 	$(getName).mouseout((e) => {
 		let getName = '.' + e.currentTarget.classList[1]
 		$(getName).css('display', 'none')
-		$(getName).css('clear', 'none')
+		$(getName).css('clear', 'left')
 	})
 })
 
