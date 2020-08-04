@@ -34,14 +34,11 @@ $(".mover .col-md-2").mouseout(e => {
 })
 
 
-
 //项目展示列表右侧图片宫格
 $(
 	function() {
-		//alert('ready');
 		$('.table tr td').click(
 			function() {
-				//alert($(this).html());
 				$('.modal-content').html($(this).html());
 
 				$('#myModal').modal('toggle');
@@ -50,11 +47,8 @@ $(
 	}
 );
 
-
-
 // swiper
 var swiper = new Swiper('.swiper-container', {
-	loop: true, //循环播放
 	slidesPerView: 3, //显示3个
 	navigation: {
 		nextEl: '.swiper-button-next',

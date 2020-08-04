@@ -704,15 +704,17 @@ li>p {
 
 /* swiper */
 .swiper-container {
-	width: 75%;
+	width: 67%;
 	height: 327px;
 	top: 28%;
 	margin-left: 29% !important;
 	margin-top: -12%;
 }
-
+.swiper-wrapper{
+	width: 103% !important;
+}
 .swiper-slide {
-	width: 28% !important;
+	width: 32% !important;
 	display: inline-block;
 	text-align: center;
 	font-size: 18px;
@@ -737,13 +739,20 @@ li>p {
 	height: 327px;
 }
 
+.swiper-line {
+	width: 88%;
+	margin: 2% 0;
+	border-top: 2px solid #fff !important;
+	opacity: 0.3;
+}
+
 .rank {
 	position: absolute;
 	width: 84%;
 	opacity: 0.86;
 	color: #fff;
 	background: #02306E;
-	padding: 3px 0 5px 20px;
+	padding: 4px 0 5px 20px;
 	bottom: 0;
 	margin-top: 113%;
 }
