@@ -68,6 +68,21 @@ ul li {
 		font-size: 10px !important;
 	}
 
+	.topNav .top-left p {
+		width: 200px;
+		display: inline-block;
+		margin-bottom: -7px;
+	}
+
+	.top-left img,.top-right img {
+		width: 30px !important;
+	}
+	.info p{
+		font-size: 12px;
+	}
+	.info strong{
+		font-size: 13px;
+	}
 	.welcome h1 {
 		font-size: 30px !important;
 	}
@@ -500,7 +515,7 @@ ul li {
 
 	.manage h1 {
 		transform: scale(0.3);
-		margin-left: -200px;
+		margin-left: -127px;
 		margin-top: -59px;
 	}
 
@@ -633,7 +648,6 @@ ul li {
 	}
 
 	.swiper-container {
-		/* left: -228px; */
 		top: 0 !important;
 	}
 
@@ -641,10 +655,45 @@ ul li {
 		height: 578px !important;
 	}
 
+	.swiper-container {
+		width: 88.5% !important;
+		height: 138px !important;
+
+	}
+
+	.swiper-button-next img {
+		margin-left: -35px !important;
+	}
+
 	.swiper-button-next,
 	.swiper-button-prev {
-		margin-left: -224px;
-		top: 245px !important;
+		margin-left: -243px !important;
+		top: 57px !important;
+	}
+
+	.swiper-button-prev img,
+	.swiper-button-next img {
+		width: 21px !important;
+	}
+
+	.swiper-slide img {
+		height: 133px !important;
+	}
+
+	.rank .mz {
+		font-size: 12px !important;
+		margin-left: 6%;
+	}
+
+	.rank .zw {
+		font-size: 12px !important;
+		transform: scale(0.8);
+		margin-left: -6%;
+	}
+
+	.m-bg {
+		margin-top: -43.4375rem !important;
+		height: 171px !important;
 	}
 
 }
