@@ -497,11 +497,13 @@ ul li {
 		margin-left: 12%;
 	}
 
-	.project-list .col-md-2 p {
+	.project-list .mover .col-md-2 p {
 		position: relative;
 		left: -55px;
 	}
-
+	.project-list .mouse .col-md-2 p {
+		position: relative;
+	}
 	.introduce-top .introduce-tl h1 {
 		float: left;
 		z-index: 999;
