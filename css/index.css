@@ -74,15 +74,19 @@ ul li {
 		margin-bottom: -7px;
 	}
 
-	.top-left img,.top-right img {
+	.top-left img,
+	.top-right img {
 		width: 30px !important;
 	}
-	.info p{
+
+	.info p {
 		font-size: 12px;
 	}
-	.info strong{
+
+	.info strong {
 		font-size: 13px;
 	}
+
 	.welcome h1 {
 		font-size: 30px !important;
 	}
@@ -481,7 +485,7 @@ ul li {
 	.modal-content img {
 		transform: scale(1.8);
 		margin-top: -136px;
-		margin-left: -110px;
+		margin-left: -172px;
 	}
 
 	.project-list .col-md-2 {
@@ -511,6 +515,10 @@ ul li {
 		padding-top: 53px !important;
 		transform: scale(0.5);
 		margin-left: -138px;
+	}
+
+	.introduce-bottom {
+		margin-left: -50px !important;
 	}
 
 	.manage h1 {
