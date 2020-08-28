@@ -1,905 +1,680 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-		<title>Bootstrap 101 Template</title>
-		<link rel="stylesheet" type="text/css" href="css/index.css" />
-		<!---------------------- Bootstrap ---------------------->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-		<!-- Link Swiper's CSS -->
-		<link rel="stylesheet" href="css/swiper.css">
-		<!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
-		<!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
-		<!--[if lt IE 9]>
-      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-    <![endif]-->
-		<style type="text/css">
-			.container {
-				padding: 0;
-			}
 
-			.topNav {
-				margin-top: 3%;
-				color: #fff;
-			}
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="keywords" content="翔辉华通,北京翔辉,翔辉,翔辉华通置业集团">
+	<meta name="description" content="翔辉华通,北京翔辉,翔辉,翔辉华通置业集团">
+	<title>翔辉华通</title>
+	<link rel="icon" href="img/icon-bg/logo16x16.ico" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link rel="stylesheet" href="css/swiper.css">
+</head>
 
-			.topNav .top-left p {
-				display: inline-block;
-				margin-bottom: 2px;
-			}
-
-			.topNav .top-left span {
-				width: 40%;
-				display: inline-block;
-				vertical-align: middle;
-			}
-
-			.topNav .py {
-				text-transform: uppercase;
-				font-size: .8125rem;
-			}
-
-			/* 右侧 */
-			.topNav .top-right .contact {
-				display: inline-block;
-				vertical-align: middle;
-				margin-left: 9px;
-			}
-
-			.topNav .top-right .info {
-				display: inline-block;
-			}
-
-			.topNav .top-right .info:first-child {
-				margin-right: 55px;
-			}
-
-			/* 列表 */
-			.navbar a .title {
-				color: #fff;
-				font-size: 14px;
-			}
-
-			.navbar a .py1 {
-				color: #fff;
-				opacity: 0.5;
-				text-transform: uppercase;
-				transform: scale(0.8);
-				font-size: 14px;
-				margin-left: -22px;
-				padding-right: 24px;
-			}
-
-			.navbar-nav>li {
-				border-top: 4px solid rgba(255, 255, 255, 0.2);
-			}
-
-			.navbar .actives {
-				border-top: 4px solid #067BFF;
-			}
-
-			.navbar-default {
-				background-color: rgba(255, 255, 255, 0);
-				border: 0;
-				margin-top: 30px;
-			}
-
-			.container-fluid {
-				width: 72%;
-				padding-right: 15px;
-
-			}
-
-			.navbar-default .navbar-collapse .nav {
-				height: 90px;
-				overflow: hidden;
-			}
-
-			@media (min-width:500px) {
-				.navbar-default .navbar-collapse .nav {
-					overflow-y: scroll;
-				}
-
-				.navbar-default .navbar-collapse .nav::-webkit-scrollbar {
-					display: none;
-				}
-			}
-
-
-			.navbar-default .navbar-nav>.active>a,
-			.navbar-default .navbar-nav>.active>a:focus,
-			.navbar-default .navbar-nav>.active>a:hover {
-				background-color: rgba(1, 1, 1, 0);
-			}
-
-			.navbar-default .navbar-toggle {
-				border-color: #ddd;
-				background-color: #ddd;
-				opacity: 0.5;
-			}
-
-			.welcome h1 {
-				font-size: 60px;
-				height: 66px;
-				overflow: hidden;
-			}
-
-			.project-list .col-md-2 a {
-				text-decoration: none;
-			}
-
-			.welcome .btn a {
-				font-size: 16px;
-				color: #1B274D;
-				font-weight: bold;
-				text-decoration: none;
-				margin-top: 34px;
-			}
-
-			.project-list .col-md-2 {
-				padding: 0;
-			}
-
-			.col-md-2 {
-				width: 19.98765%;
-			}
-		</style>
-	</head>
-	<body>
-		<div class="page">
-			<div class="container">
-				<div class="row topNav">
-					<div class="col-md-8 top-left">
-						<img src="./img/icon-bg/logo.png" alt="">
-						<span>
-							<p class="title">北京翔辉华通置业集团有限公司</p>
-							<p class="py">beijingxianghuihuatongzhiyejituan</p>
-						</span>
-					</div>
-					<div class="col-md-4 top-right">
-						<div class="info">
-							<img src="./img/icon-bg/icon_phone.png" alt="">
-							<div class="contact">
-								<strong>010-63980050</strong>
-								<p>企业电话</p>
-							</div>
-
-						</div>
-						<div class="info">
-							<img src="./img/icon-bg/icon_dz.png" alt="">
-							<div class="contact">
-								<strong>北京市西城区</strong>
-								<p>企业坐标</p>
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="list">
-				<nav class="navbar navbar-default">
-					<div class="container-fluid" style="align-content: center;">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-							 aria-expanded="false">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-							<!-- <a class="navbar-brand" href="#">Brand</a> -->
-						</div>
-						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							<ul class="nav navbar-nav">
-								<li class="actives">
-									<a href="#introduces">
-										<strong class="title">
-											企业介绍
-										</strong>
-										<p class="py1">Enterprise introduction</p>
-										<span class="sr-only">(current)</span>
-									</a>
-								</li>
-								<li>
-									<a href="#project-lists">
-										<strong class="title">
-											经营业务
-										</strong>
-										<p class="py1">Business operation</p>
-									</a>
-								</li>
-								<li>
-									<a href="#project-pres">
-										<strong class="title">
-											项目展示
-										</strong>
-										<p class="py1">Project presentation</p>
-									</a>
-								</li>
-								<li>
-									<a href="#manages">
-										<strong class="title">
-											管理架构
-										</strong>
-										<p class="py1">Management structure</p>
-									</a>
-								</li>
-								<li>
-									<a href="#subsidiarier">
-										<strong class="title">
-											集团子公司
-										</strong>
-										<p class="py1">Group subsidiary</p>
-									</a>
-								</li>
-								<li>
-									<a href="#foot">
-										<strong class="title">
-											联系我们
-										</strong>
-										<p class="py1">contact us</p>
-									</a>
-								</li>
-							</ul>
-
-						</div><!-- /.navbar-collapse -->
-					</div><!-- /.container-fluid -->
-				</nav>
-			</div>
-			<div class="welcome container">
-				<h1>欢迎来到北京翔辉华通置业集团有限公司</h1>
-				<p class="english">
-					Welcome to Beijing Xianghui Huatong Real Estate Group Co., Ltd
-				</p>
-				<div class="btn">
-					<a href="#foot">联系我们</a>
-				</div>
-			</div>
-
-		</div>
-		<!-- 项目列表 -->
+<body>
+	<div class="page">
 		<div class="container">
-			<div class="project-list" id="project-lists">
-				<div class="row mover">
-					<div class="col-md-2 pro1" id="wwww">
-						<a href="#p1">
-							<img src="./img/icon-bg/list-realEstate2X.png" alt="">
-							<strong>房地产开发</strong>
-							<p style="margin-left: 8%;">Real estate development</p>
-						</a>
-					</div>
-					<div class="col-md-2 pro2">
-						<a href="#p2">
-							<img src="./img/icon-bg/list-agriculture2x.png" alt="">
-							<strong>智慧农业</strong>
-							<p style="margin-left: 11%;">Smart agriculture</p>
-						</a><span class="line"></span>
-					</div>
-					<div class="col-md-2 pro3">
-						<a href="#p3">
-							<img src="./img/icon-bg/list-equipment2x.png" alt="">
-							<strong>设备贸易</strong>
-							<p style="margin-left: 13%;">Equipment trade</p>
-						</a><span class="line"></span>
-					</div>
-					<div class="col-md-2 pro4 actives">
-						<a href="#p4">
-							<img src="./img/icon-bg/list-engineering2x.png" alt="">
-							<strong>市政工程投资</strong>
-							<p style="margin-left:3%">Municipal Engineering Investment</p>
-						</a><span class="line"></span>
-					</div>
-					<div class="col-md-2 pro5">
-						<a href="#p5">
-							<img src="./img/icon-bg/list-pci2x.png" alt="">
-							<strong>书画传承</strong>
-							<p style="margin-left: -7%;">Inheritance of calligraphy and painting</p>
-						</a><span class="line"></span>
-					</div>
-				</div>
-				<div class="row mouse" style="position: absolute;">
-					<div class="col-md-2 pro1-a" style="width: 244px;top: -182px;">
-						<div id="p1">
-							<img src="./img/icon-bg/realEstate-A.png" alt="">
-							<strong>房地产开发</strong>
-							<p>销售、物业管理、工程建设等大型城市核心基建项目，一般包括住宅、商业、办公楼及物业管理等</p>
-						</div>
-					</div>
-					<div class="col-md-2 pro2-a" style="width: 244px;top: -182px;left: 233px;">
-						<div id="p2">
-							<img src="./img/icon-bg/agriculture-A.png" alt="">
-							<strong>智慧农业</strong>
-							<p>农业技术研发，生态观光旅游，绿色果蔬基地建设，及其他农副产品生产的产业链</p>
-						</div>
-					</div>
-					<div class="col-md-2 pro3-a" style="width: 244px;top: -182px;left: 466px;">
-						<div id="p3">
-							<img src="./img/icon-bg/equipment-bai.png" alt="">
-							<strong>设备贸易</strong>
-							<p>钢材、建材、五金交电、化工原料、百货销售电子产品、橡胶制品、仪器仪表、通讯设备、机械设备、计算机软件及辅助设备、金属材料、电气机械等</p>
-						</div>
-					</div>
-					<div class="col-md-2 pro4-a" style="width: 244px;top: -182px;left: 699px;">
-						<div id="p4">
-							<img src="./img/icon-bg/engineering-A.png" alt="">
-							<strong>市政工程投资</strong>
-							<p>承接城市配套基础建设市政工程及城市园林绿化服务等</p>
-						</div>
-					</div>
-					<div class="col-md-2 pro5-a" style="width: 244px;top: -182px;left: 937px;">
-						<div id="p5">
-							<img src="./img/icon-bg/pci-A.png" alt="">
-							<strong>书画传承</strong>
-							<p>书画创作；美术培训；艺术培训；学术研讨；组织文化艺术交流等</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-		<div class="project-pre" id="project-pres">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 pre-top">
-						<h1>PROJECT</h1>
-						<div class="title">项目展示</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-		<!-------------------- 项目展示列表 -------------------->
-		<div class="project-pre-list">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-2-5">
-						<p>项目展示1</p>
-						<div class="line"></div>
-						<div class="eng">peal estate projects</div>
-						<strong>
-							房地产项目展示
-						</strong>
-					</div>
-					<div class="col-md-2-5 project-active">
-						<p>项目展示2</p>
-						<div class="line"></div>
-						<div class="eng">Municipal Engineering</div>
-						<strong>
-							市政工程图片展示
-						</strong>
-					</div>
-					<div class="col-md-2-5">
-						<p>项目展示3</p>
-						<div class="line"></div>
-						<div class="eng">Steel trade</div>
-						<strong>
-							钢材贸易图片展示
-						</strong>
-					</div>
-					<div class="col-md-2-5">
-						<p>项目展示4</p>
-						<div class="line"></div>
-						<div class="eng">Bijie No.2 Middle School</div>
-						<strong>
-							毕节二中搬迁扩建项目
-						</strong>
-					</div>
-					<div class="col-md-2-5">
-						<p>项目展示5</p>
-						<div class="line"></div>
-						<div class="eng">calligraphy and painting</div>
-						<strong>
-							书画传承
-						</strong>
-					</div>
-				</div>
-				<!-- 图片展示 -->
-				<div id="pictures">
-					<div class="picture row">
-						<div class="picture-left col-md-2-4">
-							<img class="bgi" src="img/estate/07.jpg">
-							<div class="img">
-								<img src="img/icon-bg/realEstate.png">
-							</div>
-						</div>
-						<div class="picture-right col-xs-6 col-lg-6 col-md-8">
-							<div class="p-title">房地产项目展示</div>
-							<div class="p-line"></div>
-							<div class="p-eng">Real estate project</div>
-							<table style="border: 0;" class="table table-bordered table-hover table-striped">
-								<tr>
-									<td>
-										<img width="192" height="144" src="img/estate/04.jpg">
-									</td>
-									<td>
-										<img width="192" height="144" src="img/estate/05.jpg">
-									</td>
-									<td>
-										<img width="192" height="144" src="img/estate/07.jpg">
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<img width="192" height="144" src="img/estate/09.jpg">
-									</td>
-									<td>
-										<img width="192" height="144" src="img/estate/06.jpg">
-									</td>
-									<td>
-										<img width="192" height="144" src="img/estate/03.jpg">
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<img width="192" height="144" src="img/estate/02.jpg">
-									</td>
-									<td>
-										<img width="192" height="144" src="img/estate/01.jpg">
-									</td>
-									<td>
-										<img width="192" height="144" src="img/estate/08.jpg">
-									</td>
-								</tr>
-
-							</table>
-						</div>
-					</div>
-					<div class="picture row picture-active">
-						<div class="picture-left col-md-2-4">
-							<img class="bgi" src="img/engineering/10.jpg">
-							<div class="img">
-								<img src="img/icon-bg/ma.png">
-							</div>
-						</div>
-						<div class="picture-right col-xs-6 col-lg-6 col-md-8">
-							<div class="p-title">市政工程图片展示</div>
-							<div class="p-line"></div>
-							<div class="p-eng">Real estate project</div>
-							<table style="border: 0;" class="table table-bordered table-hover table-striped">
-								<tr>
-									<td>
-										<img width="192" height="144" src="img/engineering/10.jpg">
-									</td>
-									<td>
-										<img width="192" height="144" src="img/engineering/02.jpg">
-									</td>
-									<td>
-										<img width="192" height="144" src="img/engineering/03.jpg">
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<img width="192" height="144" src="img/engineering/04.jpg">
-									</td>
-									<td>
-										<img width="192" height="144" src="img/engineering/05.jpg">
-									</td>
-									<td>
-										<img width="192" height="144" src="img/engineering/06.jpg">
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<img width="192" height="144" src="img/engineering/07.jpg">
-									</td>
-									<td>
-										<img width="192" height="144" src="img/engineering/08.jpg">
-									</td>
-									<td>
-										<img width="192" height="144" src="img/engineering/09.jpg">
-									</td>
-								</tr>
-
-							</table>
-						</div>
-					</div>
-					<div class="picture row">
-						<div class="picture-left col-md-2-4">
-							<img class="bgi" src="img/trade/06.jpg">
-							<div class="img">
-								<img src="img/icon-bg/home.png">
-							</div>
-						</div>
-						<div class="picture-right col-xs-6 col-lg-6 col-md-8">
-							<div class="p-title">钢材贸易图片展示</div>
-							<div class="p-line"></div>
-							<div class="p-eng">Real estate project</div>
-							<table style="border: 0;" class="table table-bordered table-hover table-striped">
-								<tr>
-									<td>
-										<img width="192" height="144" src="img/trade/01.jpg">
-									</td>
-									<td>
-										<img width="192" height="144" src="img/trade/02.jpg">
-									</td>
-									<td>
-										<img width="192" height="144" src="img/trade/03.jpg">
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<img width="192" height="144" src="img/trade/04.jpg">
-									</td>
-									<td>
-										<img width="192" height="144" src="img/trade/05.jpg">
-									</td>
-									<td>
-										<img width="192" height="144" src="img/trade/07.jpg">
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<img width="192" height="144" src="img/trade/08.jpg">
-									</td>
-									<td>
-										<img width="192" height="144" src="img/trade/10.jpeg">
-									</td>
-									<td>
-										<img width="192" height="144" src="img/trade/09.jpeg">
-									</td>
-								</tr>
-
-							</table>
-						</div>
-					</div>
-					<div class="picture row">
-						<div class="picture-left col-md-2-4">
-							<img class="bgi" src="img/relocate/01.jpg">
-							<div class="img">
-								<img src="img/icon-bg/dg.png">
-							</div>
-						</div>
-						<div class="picture-right col-xs-6 col-lg-6 col-md-8">
-							<div class="p-title">毕节二中搬迁扩建项目</div>
-							<div class="p-line"></div>
-							<div class="p-eng">Real estate project</div>
-							<table style="border: 0;" class="table table-bordered table-hover table-striped">
-								<tr>
-									<td>
-										<img width="192" height="144" src="img/relocate/01.jpg">
-									</td>
-									<td>
-										<img width="192" height="144" src="img/relocate/06.jpeg">
-									</td>
-									<td>
-										<img width="192" height="144" src="img/relocate/02.jpg">
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<img width="192" height="144" src="img/relocate/04.jpeg">
-									</td>
-									<td>
-										<img width="192" height="144" src="img/relocate/03.jpeg">
-									</td>
-									<td>
-										<img width="192" height="144" src="img/relocate/05.jpeg">
-									</td>
-								</tr>
-
-							</table>
-						</div>
-					</div>
-					<div class="picture row">
-						<div class="picture-left col-md-2-4">
-							<img class="bgi" src="img/inherit/02.jpg">
-							<div class="img">
-								<img src="img/icon-bg/pci-A.png">
-							</div>
-						</div>
-						<div class="picture-right col-xs-6 col-lg-6 col-md-8">
-							<div class="p-title">书画传承</div>
-							<div class="p-line"></div>
-							<div class="p-eng">Real estate project</div>
-							<table style="border: 0;" class="table table-bordered table-hover table-striped">
-								<tr>
-									<td>
-										<img width="192" height="144" src="img/inherit/01.jpg">
-									</td>
-									<td>
-										<img width="192" height="144" src="img/inherit/02.jpg">
-									</td>
-									<td>
-										<img width="192" height="144" src="img/inherit/03.jpg">
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<img width="192" height="144" src="img/inherit/04.jpg">
-									</td>
-									<td>
-										<img width="192" height="144" src="img/inherit/05.jpg">
-									</td>
-									<td>
-										<img width="192" height="144" src="img/inherit/06.jpg">
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<img width="192" height="144" src="img/inherit/07.jpg">
-									</td>
-									<td>
-										<img width="192" height="144" src="img/inherit/08.jpg">
-									</td>
-									<td>
-										<img width="192" height="144" src="img/inherit/09.jpg">
-									</td>
-								</tr>
-
-							</table>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- 模态框 -->
-			<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="myModal">
-				<div class="modal-dialog modal-lg" role="document">
-					<div class="modal-content">
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- 企业介绍 -->
-		<div id="introduces" class="introduce">
-			<div class="container">
-				<div class="introduce-top">
-					<div class="introduce-tl">
-						<h1>北京翔辉通置业集团有限公司</h1>
-						<strong>ABOUT</strong>
-						<p>
-							注册资金 11000万元人民币,是以房地产开发项目及投资为主的大型企业集团。集团总部设立于北京，集团公司前身为北京翔辉华通投资管理有限公司，多年来秉承“尽善创新·诚信谦勤”的翔辉精神，始终坚持“合作、分享、共赢”的企业理念，贯彻“创新·优质·卓越”的品牌承诺。
-						</p>
-						<img src="./img/icon-bg/11.jpg" alt="">
-					</div>
-				</div>
-				<div class="introduce-mid">
-					<h1>创立于2019年7月</h1>
-					<p>
-						目前集团拥有近10余家控股子公司，并在北京市、贵阳市、滨州市、毕节市、六盘水市、遵义市均有房地产开发项目及其它市政工程类、投资类、观光农业、文化产业等项目；“为人民服务、打造好房子、好社区”集团所有项目从招、拍、挂土地到开发建设再到销售及物业管理，质量层层把关，每个细节都力争做到完美，以工匠精神反复推敲项目的安全、健康、美观、经济、适用。集团打造的社区生活配套文化广场使当地人民流连忘返，物业服务令人生活舒适、温馨安全。集团培养锻炼了一批从事房地产开发、销售及物业管理的专业人才，积累了经验，为公司今后更加成熟稳健的发展奠定了坚实的基础。
-					</p>
-				</div>
-				<div class="introduce-bottom row">
-					<div class="col-md-3 col-xs-12 col-sm-6">
-						<img src="./img/icon-bg/gongsi.png" alt="">
-						<p>集团子公司</p>
-						<div class="num">1&nbsp;1</div>
-					</div>
-					<div class="col-md-3 col-xs-12 col-sm-6">
-						<img src="./img/icon-bg/xiangmu.png" alt="">
-						<p>合作项目数</p>
-						<div class="num">20</div>
-					</div>
-					<div class="col-md-3 col-xs-12 col-sm-6">
-						<img src="./img/icon-bg/gongsi.png" alt="">
-						<p>合作公司数</p>
-						<div class="num">50</div>
-					</div>
-					<div class="col-md-3 col-xs-12 col-sm-6">
-						<img src="./img/icon-bg/dianzan.png" alt="">
-						<p>客户满意度</p>
-						<div class="num">100<span class="fh">%</span></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- 管理架构 -->
-		<div class="container">
-			<div id="manages" class="manage">
-				<h1>Management</h1>
-				<strong class="m-title">管理架构</strong>
-				<!-- Swiper -->
-				<div class="swiper-container">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<img src="img/leader/10.jpg">
-							<div class="rank">
-								<span class="mz">高祥</span>
-								<div class="swiper-line"></div>
-								<span class="zw">董事长/总经理</span>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<img src="img/leader/11.jpg">
-							<div class="rank">
-								<span class="mz">何孟辉</span>
-								<div class="swiper-line"></div>
-								<span class="zw">董事/常务副总经理</span>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<img src="img/leader/12.jpg">
-							<div class="rank">
-								<span class="mz">周小华</span>
-								<div class="swiper-line"></div>
-								<span class="zw">董事/副总经理</span>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<img src="img/leader/09.jpg">
-							<div class="rank">
-								<span class="mz">王子国</span>
-								<div class="swiper-line"></div>
-								<span class="zw">董事/副总经理/劳务工程公司总经理</span>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<img src="img/leader/06.jpg">
-							<div class="rank">
-								<span class="mz">杨海霞</span>
-								<div class="swiper-line"></div>
-								<span class="zw">董事/副总经理/财务总监</span>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<img src="img/leader/08.jpg">
-							<div class="rank">
-								<span class="mz">彭坤</span>
-								<div class="swiper-line"></div>
-								<span class="zw">董事/副总经理</span>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<img src="img/leader/02.jpg">
-							<div class="rank">
-								<span class="mz">赵中乾</span>
-								<div class="swiper-line"></div>
-								<span class="zw">集团公司办公室主任</span>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<img src="img/leader/03.jpg">
-							<div class="rank">
-								<span class="mz">高玉军</span>
-								<div class="swiper-line"></div>
-								<span class="zw">集团公司董事会监事</span>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<img src="img/leader/01.jpg">
-							<div class="rank">
-								<span class="mz">张磊</span>
-								<div class="swiper-line"></div>
-								<span class="zw">贸易投资公司/执行总监</span>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<img src="img/leader/05.jpg">
-							<div class="rank">
-								<span class="mz">夏修冬</span>
-								<div class="swiper-line"></div>
-								<span class="zw">市政工程公司/执行总监</span>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<img src="img/leader/04.jpg">
-							<div class="rank">
-								<span class="mz">高亮</span>
-								<div class="swiper-line"></div>
-								<span class="zw">农业公司/执行总监</span>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<img src="img/leader/07.jpg">
-							<div class="rank">
-								<span class="mz">蔡风满</span>
-								<div class="swiper-line"></div>
-								<span class="zw">物业公司/执行总监</span>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<img src="img/leader/13.jpg">
-							<div class="rank">
-								<span class="mz">杨丽萍</span>
-								<div class="swiper-line"></div>
-								<span class="zw">传媒公司/书画院/执行总监</span>
-							</div>
-						</div>
-					</div>
-
-				</div>
-				<!-- Add Arrows -->
-				<div class="swiper-button-next">
-					<img src="img/icon-bg/arrow_right.png">
-				</div>
-				<div class="swiper-button-prev">
-					<img src="img/icon-bg/arrow_left.png">
-				</div>
-			</div>
-		</div>
-		<div class="m-bg">
-			<img src="./img/icon-bg/img_4.png" alt="">
-		</div>
-		<div id="subsidiarier" class="subsidiary">
-			<div class="container">
-				<div class="s-title">集团子公司</div>
-				<div class="s-bgt">subsidiary</div>
-				<ul>
-					<li>
-						<img src="./img/icon-bg/icon_db.png" alt="">
-						<span>北京翔辉华通投资管理有限公司</span>
-					</li>
-					<li>
-						<img src="./img/icon-bg/icon_db.png" alt="">
-						<span>贵州翔辉华通投资有限公司</span>
-					</li>
-					<li>
-						<img src="./img/icon-bg/icon_db.png" alt="">
-						<span>毕节市翔辉保利房地产开发有限公司</span>
-					</li>
-					<li>
-						<img src="./img/icon-bg/icon_db.png" alt="">
-						<span>毕节市文博房地产开发有限公司</span>
-					</li>
-					<li>
-						<img src="./img/icon-bg/icon_db.png" alt="">
-						<span>滨州市翔辉万佳智慧农业有限公司</span>
-					</li>
-					<li>
-						<img src="./img/icon-bg/icon_db.png" alt="">
-						<span>贵州翔辉安亿安防科技有限公司</span>
-					</li>
-					<li>
-						<img src="./img/icon-bg/icon_db.png" alt="">
-						<span>贵州翔辉中和文化传媒有限公司</span>
-					</li>
-					<li>
-						<img src="./img/icon-bg/icon_db.png" alt="">
-						<span>贵州翔辉中成建筑劳务工程有限公司</span>
-					</li>
-					<li>
-						<img src="./img/icon-bg/icon_db.png" alt="">
-						<span>贵州诚商众联贸易有限公司</span>
-					</li>
-					<li>
-						<img src="./img/icon-bg/icon_db.png" alt="">
-						<span>北京荣宝书画院</span>
-					</li>
-					<li>
-						<img src="./img/icon-bg/icon_db.png" alt="">
-						<span>滨州瑞宸房地产开发有限公司（合作）</span>
-					</li>
-				</ul>
-				<img class="s-bg" src="./img/icon-bg/img_6.png" alt="">
-			</div>
-
-		</div>
-		<footer id="foot">
-			<div class="container">
-				<strong class="cal">联系我们</strong>
-				<div class="line"></div>
-				<p>
-					<img src="./img/icon-bg/icon_gsdz.png" alt="">
-					<span class="address">集团公司地址：北京市西城区莲花池东路106号汇融大厦A座25层</span>
-				</p>
-				<p>
-					<img src="./img/icon-bg/icon_lxdh.png" alt="">
-					<span class="tal">
-						<span>联系电话</span>：010-63980050
+			<div class="row topNav">
+				<div class="col-md-8 top-left">
+					<img src="./img/icon-bg/logo.png" alt="">
+					<span>
+						<p class="title">北京翔辉华通置业集团有限公司</p>
+						<p class="py">beijingxianghuihuatongzhiyejituan</p>
 					</span>
-				</p>
-				<div class="right">
-					<span>CONTACT</span>
-					<img src="./img/icon-bg/logo_2.png" alt="">
-					<strong class="xhht">翔辉华通</strong>
-					<p>XIANGHUIHUATONG</p>
+				</div>
+				<div class="col-md-4 top-right">
+					<div class="info">
+						<img src="./img/icon-bg/icon_phone.png" alt="">
+						<div class="contact">
+							<strong>010-63980050</strong>
+							<p>企业电话</p>
+						</div>
+
+					</div>
+					<div class="info">
+						<img src="./img/icon-bg/icon_dz.png" alt="">
+						<div class="contact">
+							<strong>北京市西城区</strong>
+							<p>企业坐标</p>
+						</div>
+
+					</div>
 				</div>
 			</div>
-		</footer>
+		</div>
+		<div class="list">
+			<nav class="navbar">
+				<div class="container">
+					<div class="collapse navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li class="actives">
+								<a href="#introduces">
+									<strong class="title">
+										企业介绍
+									</strong>
+									<p class="py1">Enterprise introduction</p>
+									<span class="sr-only">(current)</span>
+								</a>
+							</li>
+							<li>
+								<a href="#project-lists">
+									<strong class="title">
+										经营业务
+									</strong>
+									<p class="py1">Business operation</p>
+								</a>
+							</li>
+							<li>
+								<a href="#project-pres">
+									<strong class="title">
+										项目展示
+									</strong>
+									<p class="py1">Project presentation</p>
+								</a>
+							</li>
+							<li>
+								<a href="#manages">
+									<strong class="title">
+										管理架构
+									</strong>
+									<p class="py1">Management structure</p>
+								</a>
+							</li>
+							<li>
+								<a href="#subsidiarier">
+									<strong class="title">
+										集团子公司
+									</strong>
+									<p class="py1">Group subsidiary</p>
+								</a>
+							</li>
+							<li>
+								<a href="#foot">
+									<strong class="title">
+										联系我们
+									</strong>
+									<p class="py1">contact us</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="welcome container">
+			<h1>欢迎来到北京翔辉华通置业集团有限公司</h1>
+			<p class="english">
+				Welcome to Beijing Xianghui Huatong Real Estate Group Co., Ltd
+			</p>
+			<div class="btn">
+				<a href="#foot">联系我们</a>
+			</div>
+		</div>
 
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-		 crossorigin="anonymous"></script>
-		<!-- Swiper JS -->
-		<script src="js/swiper.js"></script>
-		<script src="js/index.js"></script>
-	</body>
+	</div>
+	<!-- 项目列表 -->
+	<div class="project-list" id="project-lists">
+		<div class="container">
+
+			<div class="row mover">
+				<div class="col-sm-2 pro1">
+					<a href="#p1">
+						<img src="./img/icon-bg/list-realEstate2X.png" alt="">
+						<strong>房地产开发</strong>
+						<p style="margin-left: 3%;">Real estate development</p>
+					</a>
+				</div>
+				<!--
+					-->
+				<div class="col-sm-2 pro2">
+					<a href="#p2">
+						<img src="./img/icon-bg/list-agriculture2x.png" alt="">
+						<strong>智慧农业</strong>
+						<p style="margin-left: 8%;">Smart agriculture</p>
+					</a><span class="line"></span>
+				</div>
+				<!--
+					-->
+				<div class="col-sm-2 pro3">
+					<a href="#p3">
+						<img src="./img/icon-bg/list-equipment2x.png" alt="">
+						<strong>设备贸易</strong>
+						<p style="margin-left: 9%;">Equipment trade</p>
+					</a><span class="line"></span>
+				</div>
+				<!--
+					-->
+				<div class="col-sm-2 pro4 actives">
+					<a href="#p4">
+						<img src="./img/icon-bg/list-engineering2x.png" alt="">
+						<strong>市政工程投资</strong>
+						<p style="margin-left:-4%">Municipal Engineering Investment</p>
+					</a><span class="line"></span>
+				</div>
+				<!--
+					-->
+				<div class="col-sm-2 pro5">
+					<a href="#p5">
+						<img src="./img/icon-bg/list-pci2x.png" alt="">
+						<strong>书画传承</strong>
+						<p style="margin-left: -9%;">Inheritance of calligraphy and painting</p>
+					</a><span class="line"></span>
+				</div>
+			</div>
+			<div class="row mouse" style="position: absolute;">
+				<div class="col-sm-2 pro1-a">
+					<div id="p1">
+						<img src="./img/icon-bg/realEstate-A.png" alt="">
+						<strong>房地产开发</strong>
+						<p>销售、物业管理、工程建设等大型城市核心基建项目，一般包括住宅、商业、办公楼及物业管理等</p>
+					</div>
+				</div>
+				<!--
+					-->
+				<div class="col-sm-2 pro2-a">
+					<div id="p2">
+						<img src="./img/icon-bg/agriculture-A.png" alt="">
+						<strong>智慧农业</strong>
+						<p>农业技术研发，生态观光旅游，绿色果蔬基地建设，及其他农副产品生产的产业链</p>
+					</div>
+				</div>
+				<!--
+					-->
+				<div class="col-sm-2 pro3-a">
+					<div id="p3">
+						<img src="./img/icon-bg/equipment-bai.png" alt="">
+						<strong>设备贸易</strong>
+						<p style="margin-top: -15px;">钢材、建材、五金交电、化工原料、百货销售电子产品、橡胶制品、仪器仪表、通讯设备、机械设备、计算机软件及辅助设备、金属材料、电气机械等
+						</p>
+					</div>
+				</div>
+				<!--
+					-->
+				<div class="col-sm-2 pro4-a">
+					<div id="p4">
+						<img src="./img/icon-bg/engineering-A.png" alt="">
+						<strong>市政工程投资</strong>
+						<p>承接城市配套基础建设市政工程及城市园林绿化服务等</p>
+					</div>
+				</div>
+				<!--
+					-->
+				<div class="col-sm-2 pro5-a">
+					<div id="p5">
+						<img src="./img/icon-bg/pci-A.png" alt="">
+						<strong>书画传承</strong>
+						<p>书画创作；美术培训；艺术培训；学术研讨；组织文化艺术交流等</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="project-pre" id="project-pres">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 pre-top">
+					<h1>PROJECT</h1>
+					<div class="title">项目展示</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-------------------- 项目展示列表 -------------------->
+	<div style="min-width: 1316px;">
+		<div class="project-pre-list container">
+			<div class="row project-presentation">
+				<div class="col-sm-2-5">
+					<p>项目展示1</p>
+					<div class="line"></div>
+					<div class="eng">peal estate projects</div>
+					<strong>
+						房地产项目展示
+					</strong>
+				</div>
+				<div class="col-sm-2-5 project-active">
+					<p>项目展示2</p>
+					<div class="line"></div>
+					<div class="eng">Municipal Engineering</div>
+					<strong>
+						市政工程图片展示
+					</strong>
+				</div>
+				<div class="col-sm-2-5">
+					<p>项目展示3</p>
+					<div class="line"></div>
+					<div class="eng">Steel trade</div>
+					<strong>
+						钢材贸易图片展示
+					</strong>
+				</div>
+				<div class="col-sm-2-5">
+					<p>项目展示4</p>
+					<div class="line"></div>
+					<div class="eng">Bijie No.2 Middle School</div>
+					<strong>
+						毕节二中搬迁扩建项目
+					</strong>
+				</div>
+				<div class="col-sm-2-5">
+					<p>项目展示5</p>
+					<div class="line"></div>
+					<div class="eng">calligraphy and painting</div>
+					<strong>
+						书画传承
+					</strong>
+				</div>
+			</div>
+			<!-- 图片展示 -->
+			<div id="pictures">
+				<div class="picture row">
+					<div class="picture-left">
+						<img class="bgi" src="img/estate/07.jpg">
+						<div class="img">
+							<img src="img/icon-bg/realEstate.png">
+						</div>
+					</div>
+					<div class="picture-right col-xs-6 col-lg-6">
+						<div class="p-title">房地产项目展示</div>
+						<div class="p-line"></div>
+						<div class="p-eng">Real estate project</div>
+						<!-- 图片容器 -->
+						<div id="imgdiv">
+							<img src="img/estate/04.jpg" />
+							<img src="img/estate/05.jpg" />
+							<img src="img/estate/07.jpg" />
+							<img src="img/estate/09.jpg" />
+							<img src="img/estate/06.jpg" />
+							<img src="img/estate/03.jpg" />
+							<img src="img/estate/02.jpg" />
+							<img src="img/estate/01.jpg" />
+							<img src="img/estate/08.jpg" />
+						</div>
+					</div>
+				</div>
+				<div class="picture row picture-active">
+					<div class="picture-left col-md-2-4">
+						<img class="bgi" src="img/engineering/10.jpg">
+						<div class="img">
+							<img src="img/icon-bg/ma.png">
+						</div>
+					</div>
+					<div class="picture-right col-xs-6 col-lg-6 col-md-8">
+						<div class="p-title">市政工程图片展示</div>
+						<div class="p-line"></div>
+						<div class="p-eng">Real estate project</div>
+						<!-- 图片容器 -->
+						<div id="imgdiv">
+							<img src="img/engineering/01.jpg" />
+							<img src="img/engineering/02.jpg" />
+							<img src="img/engineering/03.jpg" />
+							<img src="img/engineering/04.jpg" />
+							<img src="img/engineering/05.jpg" />
+							<img src="img/engineering/06.jpg" />
+							<img src="img/engineering/07.jpg" />
+							<img src="img/engineering/08.jpg" />
+							<img src="img/engineering/09.jpg" />
+						</div>
+						<!-- 放大遮罩层 -->
+					</div>
+				</div>
+				<div class="picture row">
+					<div class="picture-left col-md-2-4">
+						<img class="bgi" src="img/trade/06.jpg">
+						<div class="img">
+							<img src="img/icon-bg/home.png">
+						</div>
+					</div>
+					<div class="picture-right col-xs-6 col-lg-6 col-md-8">
+						<div class="p-title">钢材贸易图片展示</div>
+						<div class="p-line"></div>
+						<div class="p-eng">Real estate project</div>
+						<!-- 图片容器 -->
+						<div id="imgdiv">
+							<img src="img/trade/01.jpg" />
+							<img src="img/trade/02.jpg" />
+							<img src="img/trade/03.jpg" />
+							<img src="img/trade/04.jpg" />
+							<img src="img/trade/05.jpg" />
+							<img src="img/trade/07.jpg" />
+							<img src="img/trade/08.jpg" />
+							<img src="img/trade/09.jpeg" />
+							<img src="img/trade/10.jpeg" />
+						</div>
+
+						<!-- 放大遮罩层 -->
+						<!-- <div class="modal"></div> -->
+					</div>
+				</div>
+				<div class="picture row">
+					<div class="picture-left col-md-2-4">
+						<img class="bgi" src="img/relocate/01.jpg">
+						<div class="img">
+							<img src="img/icon-bg/dg.png">
+						</div>
+					</div>
+					<div class="picture-right col-xs-6 col-lg-6 col-md-8">
+						<div class="p-title">毕节二中搬迁扩建项目</div>
+						<div class="p-line"></div>
+						<div class="p-eng">Real estate project</div>
+						<!-- 图片容器 -->
+						<div id="imgdiv">
+							<img src="img/relocate/01.jpg" />
+							<img src="img/relocate/06.jpeg" />
+							<img src="img/relocate/02.jpg" />
+							<img src="img/relocate/04.jpeg" />
+							<img src="img/relocate/03.jpeg" />
+							<img src="img/relocate/05.jpeg" />
+						</div>
+
+						<!-- 放大遮罩层 -->
+					</div>
+				</div>
+				<div class="picture row">
+					<div class="picture-left col-md-2-4">
+						<img class="bgi" src="img/inherit/02.jpg">
+						<div class="img">
+							<img src="img/icon-bg/pci-A2x.png">
+						</div>
+					</div>
+					<div class="picture-right col-xs-6 col-lg-6 col-md-8">
+						<div class="p-title">书画传承</div>
+						<div class="p-line"></div>
+						<div class="p-eng">Real estate project</div>
+						<!-- 图片容器 -->
+						<div id="imgdiv">
+							<img src="img/inherit/01.jpg" />
+							<img src="img/inherit/02.jpg" />
+							<img src="img/inherit/03.jpg" />
+							<img src="img/inherit/04.jpg" />
+							<img src="img/inherit/05.jpg" />
+							<img src="img/inherit/06.jpg" />
+							<img src="img/inherit/07.jpg" />
+							<img src="img/inherit/08.jpg" />
+							<img src="img/inherit/09.jpg" />
+						</div>
+
+						<!-- 放大遮罩层 -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 放大遮罩层 -->
+		<div class="modal"></div>
+
+	</div>
+
+	<!-- 企业介绍 -->
+	<div id="introduces" class="introduce">
+		<div class="container">
+			<div class="introduce-top">
+				<div class="introduce-tl">
+					<h1>北京翔辉通置业集团有限公司</h1>
+					<strong>ABOUT</strong>
+					<p>
+						注册资金
+						11000万元人民币,是以房地产开发项目及投资为主的大型企业集团。集团总部设立于北京，集团公司前身为北京翔辉华通投资管理有限公司，多年来秉承“尽善创新·诚信谦勤”的翔辉精神，始终坚持“合作、分享、共赢”的企业理念，贯彻“创新·优质·卓越”的品牌承诺。
+					</p>
+					<img src="./img/icon-bg/11.jpg" alt="">
+				</div>
+			</div>
+			<div class="introduce-mid">
+				<h1>创立于2019年7月</h1>
+				<p>
+					目前集团拥有近10余家控股子公司，并在北京市、贵阳市、滨州市、毕节市、六盘水市、遵义市均有房地产开发项目及其它市政工程类、投资类、观光农业、文化产业等项目；“为人民服务、打造好房子、好社区”集团所有项目从招、拍、挂土地到开发建设再到销售及物业管理，质量层层把关，每个细节都力争做到完美，以工匠精神反复推敲项目的安全、健康、美观、经济、适用。集团打造的社区生活配套文化广场使当地人民流连忘返，物业服务令人生活舒适、温馨安全。集团培养锻炼了一批从事房地产开发、销售及物业管理的专业人才，积累了经验，为公司今后更加成熟稳健的发展奠定了坚实的基础。
+				</p>
+			</div>
+			<div class="introduce-bottom row">
+				<div class="col-xs-12 col-sm-6">
+					<img src="./img/icon-bg/gongsi.png" alt="">
+					<p>集团子公司</p>
+					<div class="num">1&nbsp;1</div>
+					<div class="ibl"></div>
+				</div>
+				<!---->
+				<div class="col-xs-12 col-sm-6">
+					<img src="./img/icon-bg/xiangmu.png" alt="">
+					<p>合作项目数</p>
+					<div class="num">20</div>
+					<div class="ibl"></div>
+				</div>
+				<!---->
+				<div class="col-xs-12 col-sm-6">
+					<img src="./img/icon-bg/gongsi.png" alt="">
+					<p>合作公司数</p>
+					<div class="num">50</div>
+					<div class="ibl"></div>
+				</div>
+				<!---->
+				<div class="col-xs-12 col-sm-6">
+					<img src="./img/icon-bg/dianzan.png" alt="">
+					<p>客户满意度</p>
+					<div class="num">100<span class="fh">%</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 管理架构 -->
+	<div class="container">
+		<div id="manages" class="manage">
+			<h1>Management</h1>
+			<strong class="m-title">管理架构</strong>
+			<!-- Swiper -->
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="img/leader/10.jpg">
+						<div class="rank">
+							<span class="mz">高祥</span>
+							<div class="swiper-line"></div>
+							<span class="zw">董事长/总经理</span>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<img src="img/leader/11.jpg">
+						<div class="rank">
+							<span class="mz">何孟辉</span>
+							<div class="swiper-line"></div>
+							<span class="zw">董事/常务副总经理</span>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<img src="img/leader/12.jpg">
+						<div class="rank">
+							<span class="mz">周小华</span>
+							<div class="swiper-line"></div>
+							<span class="zw">董事/副总经理</span>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<img src="img/leader/09.jpg">
+						<div class="rank">
+							<span class="mz">王子国</span>
+							<div class="swiper-line"></div>
+							<span class="zw">董事/副总经理/劳务工程公司总经理</span>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<img src="img/leader/06.jpg">
+						<div class="rank">
+							<span class="mz">杨海霞</span>
+							<div class="swiper-line"></div>
+							<span class="zw">董事/副总经理/财务总监</span>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<img src="img/leader/08.jpg">
+						<div class="rank">
+							<span class="mz">彭坤</span>
+							<div class="swiper-line"></div>
+							<span class="zw">董事/副总经理</span>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<img src="img/leader/02.jpg">
+						<div class="rank">
+							<span class="mz">赵中乾</span>
+							<div class="swiper-line"></div>
+							<span class="zw">集团公司办公室主任</span>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<img src="img/leader/03.jpg">
+						<div class="rank">
+							<span class="mz">高玉军</span>
+							<div class="swiper-line"></div>
+							<span class="zw">集团公司董事会监事</span>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<img src="img/leader/01.jpg">
+						<div class="rank">
+							<span class="mz">张磊</span>
+							<div class="swiper-line"></div>
+							<span class="zw">贸易投资公司/执行总监</span>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<img src="img/leader/05.jpg">
+						<div class="rank">
+							<span class="mz">夏修冬</span>
+							<div class="swiper-line"></div>
+							<span class="zw">市政工程公司/执行总监</span>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<img src="img/leader/04.jpg">
+						<div class="rank">
+							<span class="mz">高亮</span>
+							<div class="swiper-line"></div>
+							<span class="zw">农业公司/执行总监</span>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<img src="img/leader/07.jpg">
+						<div class="rank">
+							<span class="mz">蔡风满</span>
+							<div class="swiper-line"></div>
+							<span class="zw">物业公司/执行总监</span>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<img src="img/leader/13.jpg">
+						<div class="rank">
+							<span class="mz">杨丽萍</span>
+							<div class="swiper-line"></div>
+							<span class="zw">传媒公司/书画院/执行总监</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- Add Arrows -->
+			<div class="swiper-button-next">
+				<img src="img/icon-bg/arrow_right.png">
+			</div>
+			<div class="swiper-button-prev">
+				<img src="img/icon-bg/arrow_left.png">
+			</div>
+			<img class="bg-img" src="./img/icon-bg/img_4.png" alt="">
+		</div>
+	</div>
+
+	<div class="m-bg"></div>
+	<div id="subsidiarier" class="subsidiary">
+		<div class="container">
+			<div class="s-title">集团子公司</div>
+			<div class="s-bgt">subsidiary</div>
+			<ul>
+				<li>
+					<img src="./img/icon-bg/icon_db.png" alt="">
+					<span>北京翔辉华通投资管理有限公司</span>
+				</li>
+				<li>
+					<img src="./img/icon-bg/icon_db.png" alt="">
+					<span>贵州翔辉华通投资有限公司</span>
+				</li>
+				<li>
+					<img src="./img/icon-bg/icon_db.png" alt="">
+					<span>毕节市翔辉保利房地产开发有限公司</span>
+				</li>
+				<li>
+					<img src="./img/icon-bg/icon_db.png" alt="">
+					<span>毕节市文博房地产开发有限公司</span>
+				</li>
+				<li>
+					<img src="./img/icon-bg/icon_db.png" alt="">
+					<span>滨州市翔辉万佳智慧农业有限公司</span>
+				</li>
+				<li>
+					<img src="./img/icon-bg/icon_db.png" alt="">
+					<span>贵州翔辉安亿安防科技有限公司</span>
+				</li>
+				<li>
+					<img src="./img/icon-bg/icon_db.png" alt="">
+					<span>贵州翔辉中和文化传媒有限公司</span>
+				</li>
+				<li>
+					<img src="./img/icon-bg/icon_db.png" alt="">
+					<span>贵州翔辉中成建筑劳务工程有限公司</span>
+				</li>
+				<li>
+					<img src="./img/icon-bg/icon_db.png" alt="">
+					<span>贵州诚商众联贸易有限公司</span>
+				</li>
+				<li>
+					<img src="./img/icon-bg/icon_db.png" alt="">
+					<span>北京荣宝书画院</span>
+				</li>
+				<li>
+					<img src="./img/icon-bg/icon_db.png" alt="">
+					<span>滨州瑞宸房地产开发有限公司（合作）</span>
+				</li>
+			</ul>
+			<img class="s-bg" src="./img/icon-bg/img_6.png" alt="">
+		</div>
+
+	</div>
+	<footer id="foot">
+		<div class="container">
+			<strong class="cal">联系我们</strong>
+			<div class="line"></div>
+			<p>
+				<img src="./img/icon-bg/icon_gsdz.png" alt="">
+				<span class="address">集团公司地址：北京市西城区莲花池东路106号汇融大厦A座25层</span>
+			</p>
+			<p style="line-height: 34px;">
+				<img src="./img/icon-bg/icon_lxdh.png" alt="">
+				<span class="tal">
+					<span>联系电话</span>：010-63980050
+				</span>
+			</p>
+			<div class="right">
+				<span>CONTACT</span>
+				<img src="./img/icon-bg/logo_2.png" alt="">
+				<strong class="xhht">翔辉华通</strong>
+				<p>XIANGHUIHUATONG</p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Swiper JS -->
+	<script src="js/swiper.js"></script>
+	<script src="js/index.js"></script>
+	<script>
+		function goPAGE() {
+			if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+				window.location.href = "http://xhht.bjzyzn.cn/phone.html";
+			}
+
+		}
+		goPAGE();
+
+	</script>
+</body>
+
 </html>
